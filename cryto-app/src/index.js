@@ -8,8 +8,14 @@ notifyBtn.addEventListener('click', function (event) {
 
     const modalPath = path.join('file://', __dirname, 'add.html')
     let win = new BrowserWindow({
+        frame:false,
+        transparent:true,
+        alwaysOnTop:true,
         width: 400,
-        height: 200
+        height: 200,
+        webPreferences:{
+            nodeIntegration:true
+          }
     })
 
     win.on('close', function () { win = null })

@@ -25,5 +25,5 @@ input{
 #closeBtn{
     cursor: pointer;
     padding: 20px;
-    
+    text-decoration: underline;
 }
